@@ -2,27 +2,24 @@
 
 <script>
 	
-	function pulaLinha() {
-
-		document.write("<br>");	
-		document.write("<br>");	
+	function newLine() {
+		document.write("<br>");
 	}
 
-	function mostra(frase) {
-
-		document.write(frase);
-		pulaLinha();
+	function print(string) {
+		document.write(string);
+		newLine();
 	}
 
-	var ano = 2016;
+	var year = 2016;
 	
-	mostra("Flávio tem " + (ano - 1977) + " anos");
+	newLine("Douglas have " + (year - 1977) + " years.");
 
-	mostra("Joaquim tem " + (ano - 1996) + " anos");
+	newLine("Charles have " + (year - 1996) + " years.");
 
-	ano = 2017;
+	year = 2017;
 	
-	mostra("Barney tem " + (ano - 1976) + " anos");
+	newLine("Simons have " + (year - 1976) + " years.");
 
 
 

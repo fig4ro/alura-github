@@ -2,24 +2,20 @@
 
 <script>
 	
-	function pulaLinha() {
-
-		document.write("<br>");	
-		document.write("<br>");	
+	function newLine() {
+		document.write("<br>");
 	}
 
-	function mostra(frase) {
-
-		document.write(frase);
-		pulaLinha();
+	function print(string) {
+		document.write(string);
+		newLine();
 	}
 	
-	for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
-
-		mostra(7 * multiplicador);
+	for(var i = 1; i <= 10; i++) {
+		print(7 * i);
 	}
 
-	mostra("FIM");  
+	print("END");  
 		
 </script>
 

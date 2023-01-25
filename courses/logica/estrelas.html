@@ -2,24 +2,19 @@
 
 <script>
 	
-	function pulaLinha() {
-
+	function newLine() {
 		document.write("<br>");
 	}
 
-	function mostra(frase) {
-
-		document.write(frase);
-		pulaLinha();
+	function print(string) {
+		document.write(string);
+		newLine();
 	}
 
 	for(var linha = 1; linha <= 3; linha++) {
-
 		for(var coluna = 1; coluna <= 10; coluna++) {
-
 			document.write("*");		
 		}
-
 		pulaLinha();
 	}
 	

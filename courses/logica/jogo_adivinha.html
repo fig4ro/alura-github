@@ -2,16 +2,13 @@
 
 <script>
 	
-	function pulaLinha() {
-
-		document.write("<br>");	
-		document.write("<br>");	
+	function newLine() {
+		document.write("<br>");
 	}
 
-	function mostra(frase) {
-
-		document.write(frase);
-		pulaLinha();
+	function print(string) {
+		document.write(string);
+		newLine();
 	}
 
 	var numeroPensado = Math.round(Math.random() * 10) ;
@@ -24,18 +21,18 @@
 
 		if(chute == numeroPensado) {
 
-			mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+			print("Você ACERTOU, o número pensado era " + numeroPensado);
 			break;
 
 		} else {
 			
-			mostra("Você ERROU!");
+			print("Você ERROU!");
 		}
 
 		tentativas++;
 	}
 
-	mostra("FIM");
+	print("FIM");
 
 
 </script>
